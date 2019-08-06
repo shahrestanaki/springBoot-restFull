@@ -1,0 +1,4 @@
+2019-08-01 10:54:36.109  WARN 6188 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-08-01 10:54:36.285  WARN 6188 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-08-01 10:56:22.467 DEBUG 6188 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : select acntwg0_.wage as col_0_0_ from viw_acntwg acntwg0_ where acntwg0_.acntno=?
+2019-08-01 10:56:22.532 TRACE 6188 --- [http-nio-8080-exec-1] o.h.type.descriptor.sql.BasicBinder      : binding parameter [1] as [VARCHAR] - [1057-701-8234561-1]
