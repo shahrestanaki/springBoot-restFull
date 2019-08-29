@@ -1,13 +1,11 @@
 package com.controller;
 
 import com.service.AcntwgService;
+import org.junit.jupiter.api.DisplayName;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @Component
 @RestController
@@ -22,5 +20,10 @@ public class AcntwgController {
     public Double getwage(@RequestParam("accno") String accno) {
         Double acntwg = acntwgService.getwage(accno);
         return acntwg;
+    }
+
+    @GetMapping("/about")
+    public String aboutMe() {
+        return "JUnit 5 and Spring Boot Example.";
     }
 }
