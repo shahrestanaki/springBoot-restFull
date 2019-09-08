@@ -1,7 +1,6 @@
 package com.controller;
 
 import com.service.AcntwgService;
-import org.junit.jupiter.api.DisplayName;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Component;
@@ -24,6 +23,6 @@ public class AcntwgController {
 
     @GetMapping("/about")
     public String aboutMe() {
-        return "JUnit 5 and Spring Boot Example.";
+        return "Hello World";
     }
 }
