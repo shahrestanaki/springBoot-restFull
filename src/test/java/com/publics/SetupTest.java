@@ -3,6 +3,7 @@ package com.publics;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
@@ -21,7 +22,7 @@ public class SetupTest {
 
     public MockMvc mockMvc;
 
-    public ObjectMapper objectMapper;
+    public Gson gson = new Gson();
 
     @Autowired
     WebApplicationContext webApplicationContext;

@@ -1,19 +1,18 @@
 package com.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.Date;
 
 @Entity(name = "Acntwg")
 @Table(name = "viw_acntwg")
 public class Acntwg {
     @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;/*only for debug*/
-    @Column(insertable = false, updatable = false)
+    @Column(updatable = false)
     private String acntno;
-    @Column(insertable = false, updatable = false)
-    private String trndate;
+    //@Column(insertable = false, updatable = false)
+    private Date trndate;
     private Double wage;
 
     public Integer getId() {
@@ -32,11 +31,11 @@ public class Acntwg {
         this.acntno = acntno;
     }
 
-    public String getTrndate() {
+    public Date getTrndate() {
         return trndate;
     }
 
-    public void setTrndate(String trndate) {
+    public void setTrndate(Date trndate) {
         this.trndate = trndate;
     }
 
